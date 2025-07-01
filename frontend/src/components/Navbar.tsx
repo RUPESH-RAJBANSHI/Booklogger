@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import { Menu, X, User, LogOut, Home, Info, Phone, Settings } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,9 +68,10 @@ export default function Navbar() {
                   </button>
                 </div>
               ) : (
-                <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
-                  Login
-                </button>
+               <Link to="/login" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center gap-2 transition-colors">
+                 <User size={16} />
+                 Login    
+                </Link>
               )}
             </div>
           </div>

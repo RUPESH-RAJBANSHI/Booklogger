@@ -63,7 +63,7 @@ const LoginPage: React.FC = () => {
         </form>
         <div className="mt-4 flex justify-between text-sm">
           <Link
-            to="/forgot-password"
+            to="/ForgotPassword"           
             className="text-blue-600 hover:underline"
           >
             Forgot Password?
